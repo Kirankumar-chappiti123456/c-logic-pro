@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int a,i=0,c=0;
+    printf("enter the number:");
+    scanf("%d",&a);
+    for(i=2;i<a;i++)
+    {
+        if(a%i==0)
+        {
+            c++;
+            break;
+        }
+    }
+    (c==0)?printf("prime number"):printf("not prime number");
+}
